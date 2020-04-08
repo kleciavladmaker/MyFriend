@@ -8,7 +8,7 @@ package myfriend;
 public class MyFriend {
 
     /**
-     * @param args the command line arguments
+     * OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
      */
     public static void main(String[] args) {
         // TODO code application logic here
