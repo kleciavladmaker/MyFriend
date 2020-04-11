@@ -18,6 +18,8 @@ public class PessoaFisica {
 
     @Override
     public int hashCode() {
+        /*hash code para comparativos mais detalhados de infomacoes duplicadas das variaveis
+        cnpj, razao_social, nom_fantaia e senha_conta */
         int hash = 7;
         hash = 71 * hash + Objects.hashCode(this.cnpj);
         hash = 71 * hash + Objects.hashCode(this.endereco);
@@ -28,6 +30,9 @@ public class PessoaFisica {
 
     @Override
     public boolean equals(Object obj) {
+        
+        /*equals para comparativos de infomacoes duplicadas das variaveis
+        cnpj, razao_social, nom_fantaia e senha_conta */
         if (this == obj) {
             return true;
         }
@@ -56,7 +61,7 @@ public class PessoaFisica {
     /**
      * @return the pessoa
      */
-    public String getPessoa() {
+    public String getPessoa() { //encapsulamento das variaveis
         return pessoa;
     }
 
@@ -68,7 +73,7 @@ public class PessoaFisica {
     }
 
     @Override
-    public String toString() {
+    public String toString() { // conversao ToString para as variaveis
         return "PessoaFisica{" + "pessoa=" + pessoa + ", cnpj=" + cnpj + ", endereco=" + endereco + ", telefone=" + telefone + ", email=" + email + '}';
     }
 

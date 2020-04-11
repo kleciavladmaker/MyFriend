@@ -9,7 +9,7 @@ import java.util.Objects;
 
 /**
  *
- * @author 4mti
+ * @author Pedro H Martins
  */
 public class PessoaJuridica {
     
@@ -18,7 +18,10 @@ public class PessoaJuridica {
     private String telefone;
 
     @Override
-    public int hashCode() {
+    public int hashCode() {     
+        /*hash code para comparativos mais detalhados de infomacoes duplicadas das variaveis
+        cnpj, razao_social, nom_fantaia e senha_conta */
+        
         int hash = 3;
         hash = 67 * hash + Objects.hashCode(this.cnpj);
         hash = 67 * hash + Objects.hashCode(this.razao_social);
@@ -29,6 +32,8 @@ public class PessoaJuridica {
 
     @Override
     public boolean equals(Object obj) {
+        /*equals para comparativos de infomacoes duplicadas das variaveis
+        cnpj, razao_social, nom_fantaia e senha_conta */
         if (this == obj) {
             return true;
         }
@@ -64,7 +69,7 @@ public class PessoaJuridica {
     private String nom_atv_econom;
 
     @Override
-    public String toString() {
+    public String toString() {  // conversao ToString para as variaveis
         return "PessoaJuridica{" + "cnpj=" + cnpj + ", endereco=" + endereco + ", telefone=" + telefone + ", email=" + email + ", razao_social=" + razao_social + ", nom_fantasia=" + nom_fantasia + ", senha_conta=" + senha_conta + ", cod_atv_econom=" + cod_atv_econom + ", nom_atv_econom=" + nom_atv_econom + ", situcao_cadastral=" + situcao_cadastral + '}';
     }
     private String situcao_cadastral;
@@ -72,7 +77,7 @@ public class PessoaJuridica {
     /**
      * @return the cnpj
      */
-    public String getCnpj() {
+    public String getCnpj() {  //encapsulamento das variaveis
         return cnpj;
     }
 
