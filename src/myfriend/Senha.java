@@ -1,8 +1,8 @@
 package myfriend;
 
 import java.util.Objects;
-import myfriend.SqlQuery;
-import myfriend.Login;         
+//import myfriend.SqlQuery;
+//import myfriend.Login;         
         
         
 /**
