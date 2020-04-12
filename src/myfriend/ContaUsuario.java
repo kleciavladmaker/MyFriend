@@ -1,5 +1,8 @@
 package myfriend;
 
+import myfriend.Login;
+import myfriend.SqlQuery;
+
 public class ContaUsuario {
 
     private String nome;
@@ -53,12 +56,16 @@ public class ContaUsuario {
         this.senha = senha;
 
     }
-    
-    public void permissao(){
-        
+
+    public void permissao() {
+        SqlQuery sq = new SqlQuery();
+        System.out.println("Nível de usuário: " + sq.nivelUsuario());
+
     }
-    
-    public void logar(){
-            
+
+    public void logar() {
+        Login lgn = new Login();
+        lgn.logarUsuario();
+
     }
 }
