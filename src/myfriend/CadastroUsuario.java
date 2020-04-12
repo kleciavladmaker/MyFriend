@@ -16,8 +16,8 @@ import java.util.Date;
      */
     public class CadastroUsuario {
     private String nome;
-    private final Date nascimento;
-    private final String endereco;
+    private Date nascimento;
+    private String endereco;
     private String cnpj;
     private String cpf;
     private String email;
