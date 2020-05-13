@@ -9,10 +9,12 @@ import java.util.Date;
 
 /**
  *
- * @author Operador
+ * @author Júlia Brandão
  */
-    /**
-     *
+    /**A classe Cadastro de Usuário foi criada para que o usuário insira seus dados para o cadastro dentro 
+     * do site, para fazer o login serão obrigatorios alguns dados, como nome nascimento, endereço, caso
+     * pessoa jurídica (ONG) insirir o CNPJ, caso pessoa física insira seu cpf, no qual será a validação
+     * do usuário
      */
     public class CadastroUsuario {
     private String nome;
@@ -21,9 +23,10 @@ import java.util.Date;
     private String cnpj;
     private String cpf;
     private String email;
-    private final String telefone;     
+    private String telefone;     
+    
+    
   
-
 
 public CadastroUsuario(String nome, Date nascimento,String endereco, String cnpj, String cpf, String email, String telefone){
     
@@ -36,7 +39,12 @@ public CadastroUsuario(String nome, Date nascimento,String endereco, String cnpj
    this.telefone =  telefone;
    
 }
-
+/**
+ * Quando formos acessar, “pegar” alguns atributos da classe, devemos utilizar os métodos GET.
+ * Esse método sempre retornará um valor, seja ele String, int ,double etc. Então devemos criar uma função.
+ * 
+     * @return 
+ */
  public String getNome() {
         return nome;
     }
@@ -65,6 +73,12 @@ public CadastroUsuario(String nome, Date nascimento,String endereco, String cnpj
         return telefone;
     }
 
+   
+    /**
+    * Esse método não terá um retorno, pois o atributo será somente modificado, criando um método de tipo VOID, 
+    * sem retorno. Porém ele deve receber algum argumento para que possa ocorrer a devida alteração
+    */
+   
     /**
      * @param nome the nome to set
      */
