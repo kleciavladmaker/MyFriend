@@ -3,20 +3,33 @@ package myfriend;
 import myfriend.Login;
 import myfriend.SqlQuery;
 
-public class ContaUsuario {
+/**
+ * 
+ * @author Klecia
+ */
 
+
+
+/* Criação das variáveis*/
+public class ContaUsuario {
+    
     private String nome;
     private String permissao;
     private String login;
     private String senha;
+    
+    /*Criação dos métodos*/
+    public ContaUsuario(String nome, String permissao, String login, String senha) {        
 
-    public ContaUsuario(String nome, String permissao, String login, String senha) {
-
-        this.nome = nome;
+        /*this para referenciar o objeto */        
+        this.nome = nome; 
         this.permissao = permissao;
         this.login = login;
         this.senha = senha;
+                
     }
+    
+    /*Métodos gets e sets */
 
     public String getNome() {
         return nome;
@@ -57,12 +70,13 @@ public class ContaUsuario {
 
     }
 
+    /*Método para permissão a partir do nivel de usuário do banco de dados*/
     public void permissao() {
-        SqlQuery sq = new SqlQuery();
-        System.out.println("Nível de usuário: " + sq.nivelUsuario());
+        SqlQuery sql = new SqlQuery();
+        System.out.println("Nível de usuário: " + sql.nivelUsuario());
 
     }
-
+    /*Método logar herdado da classse Login*/
     public void logar() {
         Login lgn = new Login();
         lgn.logarUsuario();
