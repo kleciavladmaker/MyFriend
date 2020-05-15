@@ -9,15 +9,19 @@ import java.util.Objects;
  *
  * @author ygort
  */
-public class Senha {
-    
+    /** A classe senha foi criada para facilitar o recurso de recuperação de 
+     * senha pelo usuario, usando dados pessoais para comprovar veracidade.
+     * Como por exemplo: e-mail,cnpj/cpf e dados do login.
+     */
+public class Senha { 
+        //Criação das variaveis//
     private String email;
     private String cnpj;
     private String cpf;
     
     
     public void recuperar_senha(){}
-
+        //Metodo para recuperar senha//
     public void Senha(String x, String y) 
     {
 
@@ -38,7 +42,7 @@ public class Senha {
     
     
     
-    @Override
+    @Override       //hashCode e equals usados para comparar variaveis com informações duplicadas//
     public int hashCode() {
         int hash = 7;
         hash = 41 * hash + Objects.hashCode(this.cnpj);
@@ -69,7 +73,7 @@ public class Senha {
 
     
     
-    @Override
+    @Override       //Criação dos gets e sets//
     public String toString() {
         return "Senha{" + "email=" + email + ", cnpj=" + cnpj + ", cpf=" + cpf + '}';
     }
