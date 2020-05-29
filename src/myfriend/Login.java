@@ -21,8 +21,13 @@ public class Login {
     //Metodos ------------------------------------------------------------------------------------------------
     public void Login(String login, String senha)
     {
+        //Verificar se as strings estã vazias.
+        if(!login.equals("") || !senha.equals("")){
         this.login = login;
         this.senha = senha;
+        }else{
+            System.out.print("Erro: Conteudo de vazio.");
+        }
     }
     
     public String getLogin()
