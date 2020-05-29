@@ -17,6 +17,10 @@ public class PessoaJuridica {
     private String endereco;
     private String telefone;
 
+    /**
+     *
+     * @return
+     */
     @Override
     public int hashCode() {     
         /*hash code para comparativos mais detalhados de infomacoes duplicadas das variaveis
@@ -30,6 +34,11 @@ public class PessoaJuridica {
         return hash;
     }
 
+    /**
+     *
+     * @param obj
+     * @return
+     */
     @Override
     public boolean equals(Object obj) {
         /*equals para comparativos de infomacoes duplicadas das variaveis
@@ -68,6 +77,10 @@ public class PessoaJuridica {
     private int cod_atv_econom;
     private String nom_atv_econom;
 
+    /**
+     *
+     * @return
+     */
     @Override
     public String toString() {  // conversao ToString para as variaveis
         return "PessoaJuridica{" + "cnpj=" + cnpj + ", endereco=" + endereco + ", telefone=" + telefone + ", email=" + email + ", razao_social=" + razao_social + ", nom_fantasia=" + nom_fantasia + ", senha_conta=" + senha_conta + ", cod_atv_econom=" + cod_atv_econom + ", nom_atv_econom=" + nom_atv_econom + ", situcao_cadastral=" + situcao_cadastral + '}';

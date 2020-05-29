@@ -16,6 +16,10 @@ public class PessoaFisica {
     private String telefone;
     private String email;
 
+    /**
+     *
+     * @return
+     */
     @Override
     public int hashCode() {
         /*hash code para comparativos mais detalhados de infomacoes duplicadas das variaveis
@@ -28,6 +32,11 @@ public class PessoaFisica {
         return hash;
     }
 
+    /**
+     *
+     * @param obj
+     * @return
+     */
     @Override
     public boolean equals(Object obj) {
         
@@ -72,6 +81,10 @@ public class PessoaFisica {
         this.pessoa = pessoa;
     }
 
+    /**
+     *
+     * @return
+     */
     @Override
     public String toString() { // conversao ToString para as variaveis
         return "PessoaFisica{" + "pessoa=" + pessoa + ", cnpj=" + cnpj + ", endereco=" + endereco + ", telefone=" + telefone + ", email=" + email + '}';
@@ -126,6 +139,10 @@ public class PessoaFisica {
         return email;
     }
 
+    /**
+     *
+     * @param email
+     */
     public void setEmail(String email) {
         this.email = email;
     }

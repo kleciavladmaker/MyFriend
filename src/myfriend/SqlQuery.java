@@ -15,6 +15,10 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+/**
+ *
+ * @author 4mti
+ */
 public class SqlQuery {
     //Variáveis---------------------------------------------------------------------------------------------------
     //NOME DE SEVIDORES,LOGIN E TABELA FICTÍCIO 
@@ -25,6 +29,11 @@ public class SqlQuery {
     //------------------------------------------------------------------------------------------------------------
     
     //Métodos ----------------------------------------------------------------------------------------------------
+
+    /**
+     *
+     * @param x
+     */
     public void setLogin_Usuario(String x)
     {
         this.loginUsuario = x;
@@ -66,6 +75,12 @@ public class SqlQuery {
         }
     }
     
+    /**
+     *
+     * @param login
+     * @param senha
+     * @return
+     */
     public Boolean executarVerificacao(String login, String senha)
     {
         setLogin_Usuario(login);
@@ -76,6 +91,10 @@ public class SqlQuery {
          return false;
     }
     
+    /**
+     *
+     * @return
+     */
     public String nivelUsuario()
     {
         return aux[aux.length-1];
